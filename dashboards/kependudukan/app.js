@@ -285,10 +285,7 @@ Lampid = {
                     var content = json[i].label;     
                     
                     var infowindow = new google.maps.InfoWindow();
-                    // var infowindow = new google.maps.InfoWindow();
                     
-                    // var content = json[i].label;
-
                     google.maps.event.addListener(marker,'click', (function(marker,content,infowindow){ 
                         return function() {
                            infowindow.setContent(content);
@@ -296,10 +293,6 @@ Lampid = {
                         };
                     })(marker,content,infowindow));
 
-                    // marker.addListener('click', function() {
-                    // infowindow.setContent(content);
-                    // infowindow.open(map, marker);
-                    // });
                 }
               }
             });
@@ -319,6 +312,7 @@ Lampid = {
                         { "data": "jumlah" },
                         { "data": "longitude" },
                         { "data": "latitude" },
+                        { "data": "luas" },
                         { "data": "persen_luas" }
                     ]
                 } );
